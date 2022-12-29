@@ -2,16 +2,16 @@ spring:
   liquibase:
     change-log: classpath:/db/changelog-profiles/changelog-master.xml
   datasource:
-    url: jdbc:postgresql://db:5432/postgres
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
 server:
-  port: 8761
+  port: 8861
 eureka:
   instance:
-    hostname: app
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://app:8761/eureka/
+      defaultZone: http://localhost:8861/eureka/

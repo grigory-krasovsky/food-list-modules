@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: mainApp
-      dockerfile: mainApp/AppDockerfile
+      dockerfile: AppDockerfile
     container_name: app
     ports:
       - '8761:8761'
@@ -18,7 +18,7 @@ services:
   elastic-app:
     build:
       context: elasticApp
-      dockerfile: elasticApp/AppDockerfile
+      dockerfile: AppDockerfile
     container_name: elastic-app
     ports:
       - '8081:8081'
