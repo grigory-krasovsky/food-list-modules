@@ -1,0 +1,14 @@
+#elasticsearch:
+#  host: 'elasticsearch'
+#  port: '9200'
+##server:
+##  port: 8862
+#eureka:
+#  instance:
+#    appname: es-engine
+elasticsearch:
+  host: 'localhost'
+  port: '9200'
+spring:
+  application:
+    name: es-engine

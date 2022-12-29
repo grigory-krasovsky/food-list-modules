@@ -10,7 +10,7 @@
 
     <modules>
         <module>main-app</module>
-        <!--        <module>eureka-service</module>-->
+        <module>es-engine</module>
     </modules>
 
 </project>
