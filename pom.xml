@@ -11,6 +11,7 @@
     <modules>
         <module>main-app</module>
         <module>es-engine</module>
+        <module>discovery-service</module>
     </modules>
 
 </project>

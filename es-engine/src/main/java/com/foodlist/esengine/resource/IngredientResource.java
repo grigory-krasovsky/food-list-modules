@@ -15,16 +15,21 @@ import java.util.List;
 @RequestMapping("/ingredient")
 public class IngredientResource {
 
-    private final IngredientService ingredientService;
-    private final DiscoveryClient discoveryClient;
+//    private final IngredientService ingredientService;
+//    private final DiscoveryClient discoveryClient;
 
-    @PostMapping
-    public void saveIngredient(Ingredient ingredient) {
-        ingredientService.createIngredient(ingredient);
-    }
+//    @PostMapping
+//    public void saveIngredient(Ingredient ingredient) {
+//        ingredientService.createIngredient(ingredient);
+//    }
+//
+//    @GetMapping
+//    public List<Ingredient> findByName(@RequestParam String name) {
+//        return ingredientService.findByName(name);
+//    }
 
-    @GetMapping
-    public List<Ingredient> findByName(@RequestParam String name) {
-        return ingredientService.findByName(name);
+    @GetMapping("/test")
+    public String testController() {
+        return "test from eureka client";
     }
 }

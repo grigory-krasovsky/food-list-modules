@@ -1,10 +1,14 @@
-elasticsearch:
-  host: 'localhost'
-  port: '9200'
-spring:
-  application:
-    name: es-engine
+server:
+  port: 8862
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8861/eureka/
+      defaultZone: http://localhost:8860/eureka/
+elasticsearch:
+  host: 'localhost'
+  port: '9200'
+
+spring:
+  application:
+    name: es-engine
+
