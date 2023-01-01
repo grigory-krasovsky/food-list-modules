@@ -28,7 +28,7 @@ public class IngredientService {
                 .getForObject(String.format("http://%s/ingredient/%s", propertiesService.getEsEngineUrl(), name), UUID[].class);
 
         if (uuids == null) {
-            throw new RuntimeException("Unable to map to UUID type");
+            throw new RuntimeException("Unexpected response");
         }
 
         if (uuids.length == 0) {
