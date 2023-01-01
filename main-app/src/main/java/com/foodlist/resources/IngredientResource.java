@@ -1,25 +1,21 @@
-package com.foodlist.esengine.resource;
+package com.foodlist.resources;
 
-import com.foodlist.esengine.model.document.Ingredient;
-import com.foodlist.esengine.service.IngredientService;
+import com.foodlist.services.IngredientService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-import java.util.UUID;
-
 @RestController
-@AllArgsConstructor
 @RequestMapping("/ingredient")
+@AllArgsConstructor
 public class IngredientResource {
 
     private final IngredientService ingredientService;
 
     @GetMapping("/{name}")
-    public List<UUID> getIngredientsByName(@PathVariable String name) {
-        return ingredientService.findByName(name).stream().map(Ingredient::getUuid).toList();
+    public void getByIngredientName(@PathVariable String name) {
+        ingredientService.getByName(name);
     }
 }

@@ -17,7 +17,7 @@ public class CourseResource {
     CourseService courseService;
 
     /**
-     * Get all courses that have all of the specified ingredients
+     * Get all courses that have all the specified ingredients
      */
     @GetMapping("/getCourseByIngredient/{requiredIngredients}")
     public void getCourseByIngredient(@PathVariable List<String> requiredIngredients){

@@ -13,3 +13,6 @@ spring:
     password: postgres
   application:
     name: main-app
+foodlist:
+  application:
+    es-engine: es-engine
